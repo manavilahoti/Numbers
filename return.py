@@ -22,7 +22,7 @@ def return_amount(change):
         nickle = int(change//nickel_value)
         change = change%nickel_value
 
-        penny = int((change/penny_value))
+        penny = int(round(change/penny_value))
 
         result = (f"The change amount is {amount-cost:.2f} and it requires {quarter} quarters, {dime} dimes, {nickle} nickles and {penny} pennies")
         return result
